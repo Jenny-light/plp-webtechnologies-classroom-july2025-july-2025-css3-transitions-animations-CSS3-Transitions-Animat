@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Practicing Interactive CSS Animations</h1>
+            <p class="description">This demonstration shows how JavaScript can dynamically trigger CSS animations by adding/removing classes and modifying styles. Each component below showcases a different animation technique.</p>
+        </header>
+        
+        <div class="components-grid">
+            <!-- Box Animation Component -->
+            <div class="component">
+                <h2>Animated Box</h2>
+                <div class="demo-area">
+                    <div class="box" id="animatedBox"></div>
+                    <button id="animateBoxBtn">Animate Box</button>
+                </div>
+            </div>
+            
+            <!-- Card Flip Component -->
+            <div class="component">
+                <h2>Card Flip</h2>
+                <div class="demo-area">
+                    <div class="card-container">
+                        <div class="card" id="flipCard">
+                            <div class="card-face card-front">Front</div>
+                            <div class="card-face card-back">Back</div>
+                        </div>
+                    </div>
+                    <button id="flipCardBtn">Flip Card</button>
+                </div>
+            </div>
+            
+            <!-- Loading Animation Component -->
+            <div class="component">
+                <h2>Loading Animation</h2>
+                <div class="demo-area">
+                    <div class="loader" id="loader">
+                        <div class="loader-circle"></div>
+                    </div>
+                    <div>
+                        <button id="startLoaderBtn">Start Loading</button>
+                        <button id="stopLoaderBtn">Stop Loading</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Component -->
+            <div class="component">
+                <h2>Popup Modal</h2>
+                <div class="demo-area">
+                    <button id="openModalBtn">Open Modal</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Markup -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <div class="modal-header">
+                    <h2>Animated Modal</h2>
+                    <button class="close-modal" id="closeModalBtn">&times;</button>
+                </div>
+                <p>This modal demonstrates a slide-in and fade-out animation triggered by JavaScript. Click the close button or outside the modal to close it.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Interactive CSS Animations with JavaScript - Demonstrating dynamic animation control</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
